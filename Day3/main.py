@@ -16,6 +16,7 @@ def mul_p2(mem):
         else:
             if(execute):
                 nums = re.findall(r"\d+", inst)
+                print(nums, execute)
                 line_total += (int(nums[0]) * int(nums[1]))
     return line_total
 
